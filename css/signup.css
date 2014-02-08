@@ -1,0 +1,10 @@
+#signupform {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#signupform input {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
