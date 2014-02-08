@@ -15,6 +15,7 @@
         }
 
         function search($q) {
+            $q = str_replace(' ', '%', urldecode($q));
             return $this->get_rows("SELECT * FROM listings WHERE title LIKE '%{$q}%'");
         }
 
