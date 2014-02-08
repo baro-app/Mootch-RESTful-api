@@ -19,18 +19,6 @@
 	define('DEFAULT_MODULE', 'index');
 	define('DEFAULT_ACTION', 'index');
 
-    /** stripe **/
-    define('STRIPE_K', 'A1EirK1PRu03BYoKgLdr5VO59LM2uT12');
-    define('STRIPE_PK', 'pk_SFXPLCN5J8ugZiFOT2jfr0qrdKTcy');
-
-    /** twilio **/
-    define('TWILIO_SID', 'AC6fc27941a8504aef9345f986b2352c95');
-    define('TWILIO_TOKEN', 'c41416169a9052dd8d3766ce09e92ddd');
-    define('TWILIO_SMS_URL', 'https://blast.flyk.it/sms/incoming');
-    define('TWILIO_APP_SID', 'AP56a0a061b5a926d230594edef7465204'); //'APa3e3eed377644e849949bec57492c2fb');
-    define('APP_NUMBER', '+14025133595');
-    define('MINIMUM_RECS', 50);
-
 	/** database abstraction layer **/
 	function init_dal(&$reg) {
 		$reg->db = mysqli_connect('localhost', 'root', 'd3ftsource', 'mootch_dev');
